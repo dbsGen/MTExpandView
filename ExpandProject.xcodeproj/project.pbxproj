@@ -1,0 +1,354 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		5FE0A33416D4C89300D45670 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5FE0A31716D4C89300D45670 /* Default-568h@2x.png */; };
+		5FE0A33516D4C89300D45670 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 5FE0A31816D4C89300D45670 /* Default.png */; };
+		5FE0A33616D4C89300D45670 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5FE0A31916D4C89300D45670 /* Default@2x.png */; };
+		5FE0A33716D4C89300D45670 /* EPViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5FE0A31A16D4C89300D45670 /* EPViewController.xib */; };
+		5FE0A33816D4C89300D45670 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 5FE0A31C16D4C89300D45670 /* InfoPlist.strings */; };
+		5FE0A33916D4C89300D45670 /* EPAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 5FE0A31F16D4C89300D45670 /* EPAppDelegate.m */; };
+		5FE0A33A16D4C89300D45670 /* EPViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5FE0A32116D4C89300D45670 /* EPViewController.m */; };
+		5FE0A33B16D4C89300D45670 /* MTExpandContentView.m in Sources */ = {isa = PBXBuildFile; fileRef = 5FE0A32416D4C89300D45670 /* MTExpandContentView.m */; };
+		5FE0A33C16D4C89300D45670 /* MTExpandView.m in Sources */ = {isa = PBXBuildFile; fileRef = 5FE0A32616D4C89300D45670 /* MTExpandView.m */; };
+		5FE0A33D16D4C89300D45670 /* MTGradientView.m in Sources */ = {isa = PBXBuildFile; fileRef = 5FE0A32816D4C89300D45670 /* MTGradientView.m */; };
+		5FE0A33E16D4C89300D45670 /* UIView+Ex.m in Sources */ = {isa = PBXBuildFile; fileRef = 5FE0A32A16D4C89300D45670 /* UIView+Ex.m */; };
+		5FE0A33F16D4C89300D45670 /* ExpandProject-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 5FE0A32B16D4C89300D45670 /* ExpandProject-Info.plist */; };
+		5FE0A34016D4C89300D45670 /* EPECHomeButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 5FE0A32F16D4C89300D45670 /* EPECHomeButton.m */; };
+		5FE0A34116D4C89300D45670 /* EPECHomeView.m in Sources */ = {isa = PBXBuildFile; fileRef = 5FE0A33116D4C89300D45670 /* EPECHomeView.m */; };
+		5FE0A34216D4C89300D45670 /* icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 5FE0A33216D4C89300D45670 /* icon.png */; };
+		5FE0A34316D4C89300D45670 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 5FE0A33316D4C89300D45670 /* main.m */; };
+		5FF7F36116D0C33D001C833A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5FF7F36016D0C33D001C833A /* UIKit.framework */; };
+		5FF7F36316D0C33D001C833A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5FF7F36216D0C33D001C833A /* Foundation.framework */; };
+		5FF7F36516D0C33D001C833A /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5FF7F36416D0C33D001C833A /* CoreGraphics.framework */; };
+		5FF7F39716D0C63A001C833A /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5FF7F39616D0C63A001C833A /* QuartzCore.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		5FE0A31716D4C89300D45670 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		5FE0A31816D4C89300D45670 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		5FE0A31916D4C89300D45670 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
+		5FE0A31B16D4C89300D45670 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/EPViewController.xib; sourceTree = "<group>"; };
+		5FE0A31D16D4C89300D45670 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		5FE0A31E16D4C89300D45670 /* EPAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EPAppDelegate.h; sourceTree = "<group>"; };
+		5FE0A31F16D4C89300D45670 /* EPAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EPAppDelegate.m; sourceTree = "<group>"; };
+		5FE0A32016D4C89300D45670 /* EPViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EPViewController.h; sourceTree = "<group>"; };
+		5FE0A32116D4C89300D45670 /* EPViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EPViewController.m; sourceTree = "<group>"; };
+		5FE0A32316D4C89300D45670 /* MTExpandContentView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MTExpandContentView.h; sourceTree = "<group>"; };
+		5FE0A32416D4C89300D45670 /* MTExpandContentView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MTExpandContentView.m; sourceTree = "<group>"; };
+		5FE0A32516D4C89300D45670 /* MTExpandView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MTExpandView.h; sourceTree = "<group>"; };
+		5FE0A32616D4C89300D45670 /* MTExpandView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MTExpandView.m; sourceTree = "<group>"; };
+		5FE0A32716D4C89300D45670 /* MTGradientView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MTGradientView.h; sourceTree = "<group>"; };
+		5FE0A32816D4C89300D45670 /* MTGradientView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MTGradientView.m; sourceTree = "<group>"; };
+		5FE0A32916D4C89300D45670 /* UIView+Ex.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Ex.h"; sourceTree = "<group>"; };
+		5FE0A32A16D4C89300D45670 /* UIView+Ex.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Ex.m"; sourceTree = "<group>"; };
+		5FE0A32B16D4C89300D45670 /* ExpandProject-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "ExpandProject-Info.plist"; sourceTree = "<group>"; };
+		5FE0A32C16D4C89300D45670 /* ExpandProject-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "ExpandProject-Prefix.pch"; sourceTree = "<group>"; };
+		5FE0A32E16D4C89300D45670 /* EPECHomeButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EPECHomeButton.h; sourceTree = "<group>"; };
+		5FE0A32F16D4C89300D45670 /* EPECHomeButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EPECHomeButton.m; sourceTree = "<group>"; };
+		5FE0A33016D4C89300D45670 /* EPECHomeView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EPECHomeView.h; sourceTree = "<group>"; };
+		5FE0A33116D4C89300D45670 /* EPECHomeView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EPECHomeView.m; sourceTree = "<group>"; };
+		5FE0A33216D4C89300D45670 /* icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon.png; sourceTree = "<group>"; };
+		5FE0A33316D4C89300D45670 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		5FF7F35C16D0C33D001C833A /* ExpandProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ExpandProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		5FF7F36016D0C33D001C833A /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		5FF7F36216D0C33D001C833A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		5FF7F36416D0C33D001C833A /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		5FF7F39616D0C63A001C833A /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		5FF7F35916D0C33D001C833A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5FF7F39716D0C63A001C833A /* QuartzCore.framework in Frameworks */,
+				5FF7F36116D0C33D001C833A /* UIKit.framework in Frameworks */,
+				5FF7F36316D0C33D001C833A /* Foundation.framework in Frameworks */,
+				5FF7F36516D0C33D001C833A /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		5FE0A31616D4C89300D45670 /* ExpandProject */ = {
+			isa = PBXGroup;
+			children = (
+				5FE0A31716D4C89300D45670 /* Default-568h@2x.png */,
+				5FE0A31816D4C89300D45670 /* Default.png */,
+				5FE0A31916D4C89300D45670 /* Default@2x.png */,
+				5FE0A31A16D4C89300D45670 /* EPViewController.xib */,
+				5FE0A31C16D4C89300D45670 /* InfoPlist.strings */,
+				5FE0A31E16D4C89300D45670 /* EPAppDelegate.h */,
+				5FE0A31F16D4C89300D45670 /* EPAppDelegate.m */,
+				5FE0A32016D4C89300D45670 /* EPViewController.h */,
+				5FE0A32116D4C89300D45670 /* EPViewController.m */,
+				5FE0A32216D4C89300D45670 /* Expand */,
+				5FE0A32B16D4C89300D45670 /* ExpandProject-Info.plist */,
+				5FE0A32C16D4C89300D45670 /* ExpandProject-Prefix.pch */,
+				5FE0A32D16D4C89300D45670 /* Home */,
+				5FE0A33316D4C89300D45670 /* main.m */,
+			);
+			path = ExpandProject;
+			sourceTree = "<group>";
+		};
+		5FE0A32216D4C89300D45670 /* Expand */ = {
+			isa = PBXGroup;
+			children = (
+				5FE0A32316D4C89300D45670 /* MTExpandContentView.h */,
+				5FE0A32416D4C89300D45670 /* MTExpandContentView.m */,
+				5FE0A32516D4C89300D45670 /* MTExpandView.h */,
+				5FE0A32616D4C89300D45670 /* MTExpandView.m */,
+				5FE0A32716D4C89300D45670 /* MTGradientView.h */,
+				5FE0A32816D4C89300D45670 /* MTGradientView.m */,
+				5FE0A32916D4C89300D45670 /* UIView+Ex.h */,
+				5FE0A32A16D4C89300D45670 /* UIView+Ex.m */,
+			);
+			path = Expand;
+			sourceTree = "<group>";
+		};
+		5FE0A32D16D4C89300D45670 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				5FE0A32E16D4C89300D45670 /* EPECHomeButton.h */,
+				5FE0A32F16D4C89300D45670 /* EPECHomeButton.m */,
+				5FE0A33016D4C89300D45670 /* EPECHomeView.h */,
+				5FE0A33116D4C89300D45670 /* EPECHomeView.m */,
+				5FE0A33216D4C89300D45670 /* icon.png */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		5FF7F35116D0C33D001C833A = {
+			isa = PBXGroup;
+			children = (
+				5FE0A31616D4C89300D45670 /* ExpandProject */,
+				5FF7F35F16D0C33D001C833A /* Frameworks */,
+				5FF7F35D16D0C33D001C833A /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		5FF7F35D16D0C33D001C833A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				5FF7F35C16D0C33D001C833A /* ExpandProject.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		5FF7F35F16D0C33D001C833A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5FF7F39616D0C63A001C833A /* QuartzCore.framework */,
+				5FF7F36016D0C33D001C833A /* UIKit.framework */,
+				5FF7F36216D0C33D001C833A /* Foundation.framework */,
+				5FF7F36416D0C33D001C833A /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		5FF7F35B16D0C33D001C833A /* ExpandProject */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5FF7F38016D0C33E001C833A /* Build configuration list for PBXNativeTarget "ExpandProject" */;
+			buildPhases = (
+				5FF7F35816D0C33D001C833A /* Sources */,
+				5FF7F35916D0C33D001C833A /* Frameworks */,
+				5FF7F35A16D0C33D001C833A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ExpandProject;
+			productName = ExtensionProject;
+			productReference = 5FF7F35C16D0C33D001C833A /* ExpandProject.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		5FF7F35316D0C33D001C833A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = EP;
+				LastUpgradeCheck = 0450;
+				ORGANIZATIONNAME = "zrz(Gen)";
+			};
+			buildConfigurationList = 5FF7F35616D0C33D001C833A /* Build configuration list for PBXProject "ExpandProject" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 5FF7F35116D0C33D001C833A;
+			productRefGroup = 5FF7F35D16D0C33D001C833A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				5FF7F35B16D0C33D001C833A /* ExpandProject */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		5FF7F35A16D0C33D001C833A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5FE0A33416D4C89300D45670 /* Default-568h@2x.png in Resources */,
+				5FE0A33516D4C89300D45670 /* Default.png in Resources */,
+				5FE0A33616D4C89300D45670 /* Default@2x.png in Resources */,
+				5FE0A33716D4C89300D45670 /* EPViewController.xib in Resources */,
+				5FE0A33816D4C89300D45670 /* InfoPlist.strings in Resources */,
+				5FE0A33F16D4C89300D45670 /* ExpandProject-Info.plist in Resources */,
+				5FE0A34216D4C89300D45670 /* icon.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		5FF7F35816D0C33D001C833A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5FE0A33916D4C89300D45670 /* EPAppDelegate.m in Sources */,
+				5FE0A33A16D4C89300D45670 /* EPViewController.m in Sources */,
+				5FE0A33B16D4C89300D45670 /* MTExpandContentView.m in Sources */,
+				5FE0A33C16D4C89300D45670 /* MTExpandView.m in Sources */,
+				5FE0A33D16D4C89300D45670 /* MTGradientView.m in Sources */,
+				5FE0A33E16D4C89300D45670 /* UIView+Ex.m in Sources */,
+				5FE0A34016D4C89300D45670 /* EPECHomeButton.m in Sources */,
+				5FE0A34116D4C89300D45670 /* EPECHomeView.m in Sources */,
+				5FE0A34316D4C89300D45670 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		5FE0A31A16D4C89300D45670 /* EPViewController.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5FE0A31B16D4C89300D45670 /* en */,
+			);
+			name = EPViewController.xib;
+			sourceTree = "<group>";
+		};
+		5FE0A31C16D4C89300D45670 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5FE0A31D16D4C89300D45670 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		5FF7F37E16D0C33E001C833A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		5FF7F37F16D0C33E001C833A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		5FF7F38116D0C33E001C833A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "ExpandProject/ExpandProject-Prefix.pch";
+				INFOPLIST_FILE = "ExpandProject/ExpandProject-Info.plist";
+				PRODUCT_NAME = ExpandProject;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		5FF7F38216D0C33E001C833A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "ExpandProject/ExpandProject-Prefix.pch";
+				INFOPLIST_FILE = "ExpandProject/ExpandProject-Info.plist";
+				PRODUCT_NAME = ExpandProject;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		5FF7F35616D0C33D001C833A /* Build configuration list for PBXProject "ExpandProject" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5FF7F37E16D0C33E001C833A /* Debug */,
+				5FF7F37F16D0C33E001C833A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5FF7F38016D0C33E001C833A /* Build configuration list for PBXNativeTarget "ExpandProject" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5FF7F38116D0C33E001C833A /* Debug */,
+				5FF7F38216D0C33E001C833A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 5FF7F35316D0C33D001C833A /* Project object */;
+}

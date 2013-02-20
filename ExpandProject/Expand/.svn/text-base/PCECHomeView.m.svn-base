@@ -1,0 +1,134 @@
+//
+//  PCECHomeView.m
+//  Photocus
+//
+//  Created by zrz on 12-12-10.
+//  Copyright (c) 2012年 Dingzai. All rights reserved.
+//
+
+#import "PCECHomeView.h"
+#import "DResource.h"
+#import "NSString-Extension.h"
+#import "PCECHomeButton.h"
+#import <QuartzCore/QuartzCore.h>
+
+@implementation PCECHomeView {
+    PCECHomeButton  *_photoButton,
+                    *_albumButton,
+                    *_textButton;
+}
+
+- (id)initWithFrame:(CGRect)frame
+{
+    self = [super initWithFrame:frame];
+    if (self) {
+        _photoButton = [[PCECHomeButton alloc] initWithFrame:CGRectMake(22, 17, 60, 60)];
+        _photoButton.imageView.image = [DResource imageWithNameByCached:@"newpost_btn_camera"];
+        _photoButton.imageView.highlightedImage = [DResource imageWithNameByCached:@"newpost_btn_camera_pressed"];
+        [_photoButton addTarget:self
+                         action:@selector(photoClicked)
+               forControlEvents:UIControlEventTouchUpInside];
+        _photoButton.titleLabel.text = [NSString _tr:@"Photo"];
+        [self.contentView addSubview:_photoButton];
+        
+        _albumButton = [[PCECHomeButton alloc] initWithFrame:CGRectMake(128, 17, 60, 60)];
+        _albumButton.imageView.image = [DResource imageWithNameByCached:@"newpost_btn_import"];
+        _albumButton.imageView.highlightedImage = [DResource imageWithNameByCached:@"newpost_btn_import_pressed"];
+        [_albumButton addTarget:self
+                         action:@selector(albumClicked)
+               forControlEvents:UIControlEventTouchUpInside];
+        _albumButton.titleLabel.text = [NSString _tr:@"Import"];
+        [self.contentView addSubview:_albumButton];
+        
+        _textButton = [[PCECHomeButton alloc] initWithFrame:CGRectMake(236, 17, 60, 60)];
+        _textButton.imageView.image = [DResource imageWithNameByCached:@"newpost_btn_text"];
+        _textButton.imageView.highlightedImage = [DResource imageWithNameByCached:@"newpost_btn_text_pressed"];
+        [_textButton addTarget:self
+                        action:@selector(textClicked)
+              forControlEvents:UIControlEventTouchUpInside];
+        _textButton.titleLabel.text = [NSString _tr:@"Text"];
+        [self.contentView addSubview:_textButton];
+
+    }
+    return self;
+}
+
+- (void)photoClicked
+{
+    if (self.eventBlock) {
+        self.eventBlock(self, 1);
+    }
+}
+
+- (void)albumClicked
+{
+    if (self.eventBlock) {
+        self.eventBlock(self, 2);
+    }
+}
+
+- (void)textClicked
+{
+    if (self.eventBlock) {
+        self.eventBlock(self, 3);
+    }
+}
+
+- (void)openWithHeight:(CGFloat)height
+{
+    [super openWithHeight:height];
+    
+#define kAniamtionDuration 0.2
+    
+    CABasicAnimation *alphaAniamtion = [CABasicAnimation animationWithKeyPath:@"opacity"];
+    alphaAniamtion.fromValue = [NSNumber numberWithFloat:0.5];
+    alphaAniamtion.toValue = [NSNumber numberWithFloat:1];
+    alphaAniamtion.timingFunction = [CAMediaTimingFunction functionWithName:kCAMediaTimingFunctionEaseOut];
+    alphaAniamtion.duration = kAniamtionDuration;
+    
+    CATransform3D t08 = CATransform3DMakeScale(0.1, 0.1, 1);
+    _albumButton.layer.transform = t08;
+    _textButton.layer.transform = t08;
+    _photoButton.layer.transform = t08;
+    
+    CAKeyframeAnimation *animation = [CAKeyframeAnimation animationWithKeyPath:@"transform"];
+    animation.values = @[[NSValue valueWithCATransform3D:t08],
+                        [NSValue valueWithCATransform3D:CATransform3DMakeScale(1.2, 1.2, 1)],
+                        [NSValue valueWithCATransform3D:CATransform3DIdentity]];
+    animation.timingFunctions = @[[CAMediaTimingFunction functionWithName:kCAMediaTimingFunctionEaseOut],
+                            [CAMediaTimingFunction functionWithName:kCAMediaTimingFunctionEaseInEaseOut]];
+    animation.keyTimes = @[@0.0f, @0.4f, @1.0f];
+    animation.duration = kAniamtionDuration;
+    
+    CAAnimationGroup *animationGroup = [CAAnimationGroup animation];
+    animationGroup.animations = @[alphaAniamtion, animation];
+    animationGroup.duration = kAniamtionDuration;
+    
+    dispatch_time_t popTime = dispatch_time(DISPATCH_TIME_NOW, 0.1 * NSEC_PER_SEC);
+    dispatch_after(popTime, dispatch_get_main_queue(), ^(void){
+        _photoButton.layer.transform = CATransform3DIdentity;
+        [_photoButton.layer addAnimation:animationGroup
+                                  forKey:@""];
+        dispatch_time_t popTime = dispatch_time(DISPATCH_TIME_NOW, 0.02 * NSEC_PER_SEC);
+        dispatch_after(popTime, dispatch_get_main_queue(), ^(void){
+            _albumButton.layer.transform = CATransform3DIdentity;
+            [_albumButton.layer addAnimation:animationGroup
+                                      forKey:@""];
+        });
+        
+        
+        dispatch_time_t popTime2 = dispatch_time(DISPATCH_TIME_NOW, 0.04 * NSEC_PER_SEC);
+        dispatch_after(popTime2, dispatch_get_main_queue(), ^(void){
+            _textButton.layer.transform = CATransform3DIdentity;
+            [_textButton.layer addAnimation:animationGroup
+                                     forKey:@""];
+        });
+    });
+}
+
+- (void)delayAnimation:(CAKeyframeAnimation *)aniamtion
+{
+    
+}
+
+@end
